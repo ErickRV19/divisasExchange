@@ -1,0 +1,38 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    color: white;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(0, 174, 105, 1) 32%, rgba(0, 174, 105, 1) 100%);
+    padding: 2.5em 3em;
+    font-weight: 700;
+    height: 40vh;
+    position: sticky;
+}
+
+#fecha {
+    font-weight: 400;
+}
+
+#hora {
+    font-weight: 400;
+}
+
+#menus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-weight: 400;
+    font-size: x-large;
+}
+
+.mainCard {
+    position: absolute;
+    background-color: white;
+    padding: 30vw;
+    border-color: white;
+    border-style: solid;
+    border-radius: 3em;
+    top: 31vh;
+}
