@@ -1,10 +1,10 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 header {
     color: white;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(0, 174, 105, 1) 32%, rgba(0, 174, 105, 1) 100%);
+    background: linear-gradient( 0deg, rgba(255, 255, 255, 1) 0%, rgba(0, 174, 105, 1) 32%, rgba(0, 174, 105, 1) 100%);
     padding: 2.5em 3em;
     font-weight: 700;
     height: 40vh;
@@ -27,12 +27,26 @@ header {
     font-size: x-large;
 }
 
+#menu2 {
+    color: #bfbfbf;
+}
+
 .mainCard {
     position: absolute;
     background-color: white;
-    padding: 30vw;
     border-color: white;
     border-style: solid;
     border-radius: 3em;
-    top: 31vh;
+    top: 30vh;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    left: 0;
+}
+
+.carta {
+    border-radius: 1.5em;
+    border-color: #bfbfbf94;
+    border-style: solid;
+    padding: 3em;
 }
