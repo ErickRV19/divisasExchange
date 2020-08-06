@@ -48,5 +48,6 @@ header {
     border-radius: 1.5em;
     border-color: #bfbfbf94;
     border-style: solid;
-    padding: 3em;
+    padding: 1em;
+    margin: 1em 2em;
 }
