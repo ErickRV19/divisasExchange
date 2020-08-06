@@ -1,6 +1,10 @@
 var hours = document.getElementById("hora");
 var date = document.getElementById("fecha");
 var dolar = document.getElementById("dolar");
+var euro = document.getElementById("euro");
+var libra = document.getElementById("libra");
+var yen = document.getElementById("yen");
+
 // hora y dia
 var meses = new Array(
     "Enero",
@@ -42,8 +46,21 @@ function generar() {
         .then((respuesta) => respuesta.json())
         .then((response) => {
             dolar.innerHTML = response.rates.MXN;
-            console.log(response);
-            console.log(dolar);
+        });
+    fetch("https://api.exchangeratesapi.io/latest?base=EUR")
+        .then((respuesta) => respuesta.json())
+        .then((response) => {
+            euro.innerHTML = response.rates.MXN;
+        });
+    fetch("https://api.exchangeratesapi.io/latest?base=GBP")
+        .then((respuesta) => respuesta.json())
+        .then((response) => {
+            libra.innerHTML = response.rates.MXN;
+        });
+    fetch("https://api.exchangeratesapi.io/latest?base=JPY")
+        .then((respuesta) => respuesta.json())
+        .then((response) => {
+            yen.innerHTML = response.rates.MXN;
         });
 }
 
